@@ -1,0 +1,50 @@
+.header-logo {
+    float: left;
+}
+
+.header-logo a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.header-links {
+    margin: 1% 0;
+    margin-left: 23%;
+}
+
+.header-links a {
+    margin: 0 4%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-links a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.mySlides {
+    margin-left: -5px;
+}
+
+.page-img {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(195, 181, 209);
+}
+
+.page-img h3 {
+    color: white;
+    padding: 5% 39%;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+.product-list {
+    width: 30%;
+    margin: auto;
+}
+
+.product-list img {
+    border-radius: 10px;
+}

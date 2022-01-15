@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>Anasayfa</title>
+    <script src="js/slider-min.js" type="text/javascript">
+    </script>
+</head>
+    
+<body>
+    <header>
+    <nav>
+        <div class="header-logo">
+            <a href="">BOOK SHOP</a>
+        </div>
+
+        <div class="header-links">
+            <a href="index.html">Anasayfa</a>
+            <a href="about-us.html">Hakkımızda</a>
+            <a href="products.html">Ürünlerimiz</a>
+            <a href="contact.html">İletişim</a>
+        </div>
+
+    </nav>
+    </header>
+
+    <section>
+        <div>
+            <img class="mySlides" src="https://picsum.photos/id/83/1530/450" alt="sliderImg1" />
+            <img class="mySlides" src="https://picsum.photos/id/80/1530/450" alt="sliderImg1" />
+            <img class="mySlides" src="https://picsum.photos/id/77/1530/450" alt="sliderImg1" />
+        </div>
+
+        <div id="description">
+            <h3>Book Shop</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat esse tenetur, nisi alias amet error voluptatibus
+            eaque animi molestiae obcaecati assumenda beatae velit dolorum hic nostrum sunt eveniet sit voluptatem, harum ducimus laborum tempora!</p>
+        </div>
+    </section>
+</body>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>
+</html>
